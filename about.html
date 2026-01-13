@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <section class="header">
+    <div class="logo">
+      <h2><span>T</span>ravel Bee</h2>
+    </div>
+
+    <!-- HAMBURGER ICON -->
+    <div class="menu-icon" id="menu-icon">☰</div>
+
+    <ul class="navbar" id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pakages.html">Packages</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+
+    <div class="button">
+      <button>Sign in</button>
+    </div>
+  </section>
+
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.getElementById("navbar");
+
+    menuIcon.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
